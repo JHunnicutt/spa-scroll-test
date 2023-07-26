@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Nav from "~/components/nav";
 
 import "../styles/globals.css";
 
@@ -16,6 +17,7 @@ export default function DashboardLayout({
     <html lang="en" className="min-h-screen w-screen">
       <body className="h-full w-full bg-aktiga-gradient bg-fixed">
         {children}
+        <Nav />
       </body>
     </html>
   );
