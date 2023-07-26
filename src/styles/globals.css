@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  position: absolute;
+  height: 100vw;
+  width: 100vh;
+  transform-origin: top left;
+  transform: translateY(100vh) rotate(-90deg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.wrapper {
+  display: flex;
+  width: 200vw;
+  transform-origin: top left;
+  transform: translateX(100vh) rotate(90deg);
+}
