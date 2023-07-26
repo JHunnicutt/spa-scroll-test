@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "aktiga-gradient":
+          "linear-gradient(to top, #000428 10%, transparent), linear-gradient(to right, #001B47, #0055B2)",
+      },
+    },
   },
   plugins: [],
 };

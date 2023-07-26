@@ -13,8 +13,10 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="min-h-screen w-screen">
+      <body className="h-full w-full bg-aktiga-gradient bg-fixed">
+        {children}
+      </body>
     </html>
   );
 }
