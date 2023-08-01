@@ -1,14 +1,13 @@
 "use client";
 
 import Section from "~/components/Section";
-import { twMerge } from "tailwind-merge";
 import { useRef, useEffect } from "react";
 
 export default function HomePage() {
   const scrollRef = useRef<HTMLDivElement>(null!);
 
   useEffect(() => {
-    scrollRef.current.style.transform = `translate(${900}px, 50%)`;
+    scrollRef.current.style.transform = `translate(${900}px, 55%)`;
   }, []);
 
   function handleScroll(e: any) {
@@ -20,7 +19,7 @@ export default function HomePage() {
 
     const bgPosition = (1 - scrollPercentage) * scaler - scaler / 2;
 
-    scrollRef.current.style.transform = `translate(${bgPosition}px, 50%)`;
+    scrollRef.current.style.transform = `translate(${bgPosition}px, 55%)`;
   }
 
   return (
