@@ -10,9 +10,9 @@ export default function HomePage() {
     scrollRef.current.style.transform = `translate(${900}px, 55%)`;
   }, []);
 
-  function handleScroll(e: any) {
-    const scrollPosition = e.target.scrollTop;
-    const scrollMax = e.target.scrollHeight / 1.25;
+  function handleScroll(e: React.UIEvent<HTMLDivElement>) {
+    const scrollPosition = (e.target as HTMLElement).scrollTop;
+    const scrollMax = (e.target as HTMLElement).scrollHeight / 1.25;
     const scrollPercentage = scrollPosition / scrollMax;
 
     const scaler = 1800;
