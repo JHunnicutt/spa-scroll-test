@@ -14,7 +14,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="min-h-screen w-screen">
+    <html lang="en" className="min-h-screen w-screen scroll-smooth">
       <body className="h-full w-full bg-aktiga-gradient bg-fixed">
         {children}
         <Nav />
